@@ -47,9 +47,9 @@ namespace BattleMiniMap.View.Background.Boundary
             return Texture ??= CreateTexture();
         }
 
-        public override void Clear()
+        public override void Clear(bool clearNextFrame)
         {
-            base.Clear();
+            base.Clear(clearNextFrame);
             Texture = null;
         }
 
