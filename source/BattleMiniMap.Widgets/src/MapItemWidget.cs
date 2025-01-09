@@ -37,8 +37,11 @@ namespace BattleMiniMap.Widgets
             }
             else
             {
+                /*
                 var layers = brush.GetStyleOrDefault(CurrentState).Layers;
                 styleLayer = layers?.FirstOrDefault();
+                */
+                styleLayer = brush.GetStyleOrDefault(CurrentState).DefaultLayer;
             }
             simpleMaterial.OverlayEnabled = false;
             simpleMaterial.CircularMaskingEnabled = false;

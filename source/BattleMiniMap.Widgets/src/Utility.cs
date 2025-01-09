@@ -92,8 +92,10 @@ namespace BattleMiniMap.Widgets
             }
             else
             {
-               var layers = brush.GetStyleOrDefault(widget.CurrentState).Layers;
-                styleLayer = layers?.FirstOrDefault();
+                /*
+                var layers = brush.GetStyleOrDefault(widget.CurrentState).Layers;
+                styleLayer = layers?.FirstOrDefault();*/
+                styleLayer = brush.GetStyleOrDefault(widget.CurrentState).DefaultLayer;
             }
             simpleMaterial.OverlayEnabled = false;
             simpleMaterial.CircularMaskingEnabled = false;
